@@ -79,10 +79,12 @@ If you don't already have a Kubernetes cluster running, you can use the Terrafor
 
 These labs will use Llama for the LLM, Kubernetes for the Agent runtime, and a broken app that the PE assistant Agent will help you fix.
 
+**prereq**: [Hardware decisions for running Models locally]()
+
 1. [Deploy the broken app](https://github.com/AdminTurnedDevOps/Agentic-AI-The-Hard-Way/tree/main/the-broken-apps/pe-assistant-app).
     - The app is intentionally broken, so the goal is to use Agentic AI to fix it.
 2. [Deploy kagent](https://github.com/AdminTurnedDevOps/Agentic-AI-The-Hard-Way/blob/main/platform-engineering-assistant/deploy-kagent.md)
-3. [vLLM and llm-d configuration](https://github.com/AdminTurnedDevOps/Agentic-AI-The-Hard-Way/blob/main/platform-engineering-assistant/deploy-llama.md)
+3. [vLLM and llm-d configuration](https://github.com/AdminTurnedDevOps/Agentic-AI-The-Hard-Way/blob/main/platform-engineering-assistant/vllm-llmd.md)
 4. [Create an Agent](https://github.com/AdminTurnedDevOps/Agentic-AI-The-Hard-Way/blob/main/platform-engineering-assistant/create-agent.md)
 5. Agentgateway installation & configuration:
     - [Deploy Agentgateway](https://github.com/AdminTurnedDevOps/Agentic-AI-The-Hard-Way/blob/main/platform-engineering-assistant/deploy-agw.md)
@@ -122,3 +124,4 @@ These labs will use Claude for the LLM,
 
 1. [Run Sandbox]()
 2. [Connect an LLM provider to the sandbox]()
+3. [Sandbox policies]()
