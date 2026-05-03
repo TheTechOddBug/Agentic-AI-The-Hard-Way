@@ -124,7 +124,7 @@ These labs will use Claude for the LLM,
 
 ### Isolated Agent
 
-1. [Run Sandbox]()
-2. [Upstream inference routing with agentgateway]()
+1. [Run Sandbox](https://github.com/AdminTurnedDevOps/Agentic-AI-The-Hard-Way/blob/main/isolated-agent/installation.md)
+2. [Upstream inference routing with agentgateway](https://github.com/AdminTurnedDevOps/Agentic-AI-The-Hard-Way/blob/main/isolated-agent/inference-with-agw.md)
 3. [Connect an LLM provider to the sandbox]()
 4. [Sandbox policies]()
