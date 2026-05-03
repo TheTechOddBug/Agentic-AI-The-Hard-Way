@@ -32,6 +32,10 @@ The Observer helps in all things monitoring and observability to help you figure
 
 The autonomous k8s engineer takes autonomy to a whole other level. It can figure out what is going on, fix the issue, deploy what is needed, and ensure the environment is running smooth all without you having to even know about it.
 
+### Isolated Agent
+
+Sandboxes are something that many organizations have implemented for workloads. The goal is whatever is running is the sandbox is isolated from everything EXCEPT what it needs to perform its action. No access to the outside world, files/folders, projects, teams, cloud providers, etc... In the world of Agentic AI, we're now seeing the idea around Agent Sandboxes pop up as well for the same thing - isolation, except for Agent runs.
+
 ## Technology/Stack Details
 
 You will be using the following technologies and platforms to set up an Agentic environment.
@@ -41,7 +45,7 @@ You will be using the following technologies and platforms to set up an Agentic 
 2. Model Context Protocol (MCP)
     - MCP Servers expose specialized tools to Agents to perform particular tasks. For example, there is a k8s MCP Server that has tools for things like listing pods, looking at events, deploying workloads, and troubleshooting. This extends the capabilities of the Agent as its trained on general k8s data, but not specialized k8s needs.
 3. CrewAI
-    - One of the Agentic frameworks for building Agents, connecting to LLMs, and various other methods of Agentic workflows in Python.
+    - One of the Agentic frameworks for building Agents, connecting to LLMs, and various other methods of Agentic workflows in Python. This is for "The Observer" scenario.
 4. Kagent
     - An Agentic framework and runtime used to create Agents in a declarative method and deploy them on Kubernetes.
 5. Agent Skills
@@ -54,6 +58,8 @@ You will be using the following technologies and platforms to set up an Agentic 
     - LLMs are the "new wave Models" that many organizations are focused on. They are definitely the standard/default at this point. They differ though ranging from SaaS-based Models (like Claude, Gemini, GPT, etc.) to open-source Models that you can control, fine-tune, and run in your environment (like Deepseek and Llama)
 9. AI Security
     - Rate limiting, prompt guards, authentication, and MCP security
+10. Nvidias OpenShell
+    - OpenShell for Agentic sandboxing.
 
 
 ## Labs
@@ -105,3 +111,4 @@ These labs will use Claude for the LLM,
 4. [Deploy the self-healing agent](https://github.com/AdminTurnedDevOps/Agentic-AI-The-Hard-Way/blob/main/autonomous-k8s-engineer/self-healing-agent.md)
 5. [Log checks](https://github.com/AdminTurnedDevOps/Agentic-AI-The-Hard-Way/blob/main/autonomous-k8s-engineer/logs.md)
 6. [Deploy the self-healing checker](https://github.com/AdminTurnedDevOps/Agentic-AI-The-Hard-Way/blob/main/autonomous-k8s-engineer/self-healing-checker.md)
+7. [Model failover for optimal, zero-down workflows] ()
