@@ -123,5 +123,6 @@ These labs will use Claude for the LLM,
 ### Isolated Agent
 
 1. [Run Sandbox]()
-2. [Connect an LLM provider to the sandbox]()
-3. [Sandbox policies]()
+2. [Upstream inference routing with agentgateway]()
+3. [Connect an LLM provider to the sandbox]()
+4. [Sandbox policies]()
