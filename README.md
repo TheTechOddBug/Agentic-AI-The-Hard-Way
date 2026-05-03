@@ -51,15 +51,18 @@ You will be using the following technologies and platforms to set up an Agentic 
 5. Agent Skills
     - Like an external RAG. Skills contain anything from code examples to PDFs to specialized prompts.
 6. Monitoring and Observability
-    - All things logs, traces, and metrics for Agentic traffic ranging from how the Agent is working to the traffic flowing within the gateway. Observability in AI ranges from figuring out issues to understanding token usage and cost.
+    - All things logs, traces, and metrics for Agentic traffic ranging from how the Agent is working to the traffic flowing within the gateway to agent identity for ensuring the correct Agent is is the workflow. Observability in AI ranges from figuring out issues to understanding token usage and cost.
 7. AI Gateway
     - For all things monitoring, observability, and security from Agents to LLMs, MCP servers, and other agents. Regardless of where AI traffic is going, packets are flowing from one place to another. Those packets, at some point, will need to be looked at and secured. Think of it like the tunnel from point A to point B.
 8. Large Language Models (LLM) both open-source (Llama) and provider-based (Claude)
     - LLMs are the "new wave Models" that many organizations are focused on. They are definitely the standard/default at this point. They differ though ranging from SaaS-based Models (like Claude, Gemini, GPT, etc.) to open-source Models that you can control, fine-tune, and run in your environment (like Deepseek and Llama)
 9. AI Security
-    - Rate limiting, prompt guards, authentication, and MCP security
+    - Rate limiting, prompt guards, authentication, authorization, and MCP security
 10. Nvidias OpenShell
     - OpenShell for Agentic sandboxing.
+11. Testing
+    - Agent Evals
+    - Performance testing
 
 
 ## Labs
@@ -79,7 +82,7 @@ These labs will use Llama for the LLM, Kubernetes for the Agent runtime, and a b
 1. [Deploy the broken app](https://github.com/AdminTurnedDevOps/Agentic-AI-The-Hard-Way/tree/main/the-broken-apps/pe-assistant-app).
     - The app is intentionally broken, so the goal is to use Agentic AI to fix it.
 2. [Deploy kagent](https://github.com/AdminTurnedDevOps/Agentic-AI-The-Hard-Way/blob/main/platform-engineering-assistant/deploy-kagent.md)
-3. [Create A Llama Deployment](https://github.com/AdminTurnedDevOps/Agentic-AI-The-Hard-Way/blob/main/platform-engineering-assistant/deploy-llama.md)
+3. [vLLM and llm-d configuration](https://github.com/AdminTurnedDevOps/Agentic-AI-The-Hard-Way/blob/main/platform-engineering-assistant/deploy-llama.md)
 4. [Create an Agent](https://github.com/AdminTurnedDevOps/Agentic-AI-The-Hard-Way/blob/main/platform-engineering-assistant/create-agent.md)
 5. Agentgateway installation & configuration:
     - [Deploy Agentgateway](https://github.com/AdminTurnedDevOps/Agentic-AI-The-Hard-Way/blob/main/platform-engineering-assistant/deploy-agw.md)
@@ -91,6 +94,7 @@ These labs will use Llama for the LLM, Kubernetes for the Agent runtime, and a b
     - [Set Up MCP Server Tool](https://github.com/AdminTurnedDevOps/Agentic-AI-The-Hard-Way/blob/main/platform-engineering-assistant/mcp-server-tool-setup.md)
     - [Configuring MCP Server security (access policies and auth)]()
 7. [Metrics and Traces for Agentic traffic]()
+    - [Agent Identity]()
 
 ### The Observer Lab
 
@@ -102,6 +106,7 @@ These labs will use Claude for the LLM,
 4. [Implementing web search/RAG]()
 5. [Implement Agent Skills]()
 6. [Adding agentgateway for an AI Gateway]()
+7. [Evaluating the agent with Agent Evals]()
 
 ### The Autonomous k8s Engineer Lab
 
@@ -112,3 +117,8 @@ These labs will use Claude for the LLM,
 5. [Log checks](https://github.com/AdminTurnedDevOps/Agentic-AI-The-Hard-Way/blob/main/autonomous-k8s-engineer/logs.md)
 6. [Deploy the self-healing checker](https://github.com/AdminTurnedDevOps/Agentic-AI-The-Hard-Way/blob/main/autonomous-k8s-engineer/self-healing-checker.md)
 7. [Model failover for optimal, zero-down workflows](https://github.com/AdminTurnedDevOps/Agentic-AI-The-Hard-Way/blob/main/autonomous-k8s-engineer/model-failover.md)
+
+### Isolated Agent
+
+1. [Run Sandbox]()
+2. [Connect an LLM provider to the sandbox]()
