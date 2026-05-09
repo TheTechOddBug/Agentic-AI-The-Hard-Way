@@ -126,5 +126,5 @@ These labs will use Claude for the LLM,
 
 1. [Run Sandbox](https://github.com/AdminTurnedDevOps/Agentic-AI-The-Hard-Way/blob/main/isolated-agent/installation.md)
 2. [Upstream inference routing with agentgateway](https://github.com/AdminTurnedDevOps/Agentic-AI-The-Hard-Way/blob/main/isolated-agent/inference-with-agw.md)
-3. [Connect an LLM provider to the sandbox]()
+3. [NemoClaw + OpenShell](https://github.com/AdminTurnedDevOps/Agentic-AI-The-Hard-Way/blob/main/isolated-agent/nemoclaw-openshell.md)
 4. [Sandbox policies]()
